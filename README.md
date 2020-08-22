@@ -436,7 +436,17 @@ vwrite $a 0 0 400
   
   
 ### Music
+We have 3 commands:  
+```
+mus_playnote 60 1
+-plays C (middle) for 1 second
 
+mus_instrument (1-21)
+-sets active instrument to some value (instruments are exactly like in the set instrument block)
+
+mus_drum (1-18) 1
+-plays some drum instrument for 1 second
+```
   
   
 

@@ -139,6 +139,18 @@ These are the 6 main Datatypes:
 **comments** `up to 12 values or so. (mainly for commenting) - are coloured grey`  
   
   
+
+### Screenmodes
+Here are the 3 Screenmodes changed with the screenmode command.  
+1 - Editor (maybe for programs involving changing the code mid-execution)  
+2 - Text-out (for Displaying Text)  
+3 - Draw-out (for Drawing, loading Images, or writing Text in some random places)  
+  
+Example:  
+```
+screenmode 2
+```
+  
 ### Variables
 Here are the basics you need with Variables:  
   
@@ -306,8 +318,17 @@ Note: Functions use global variables like everything else and functions CANNOT h
   
   
 ### Filesystem
-Low Level Commands are for manipulating Cells or/and the Pointer directly.  
-
+a
+  
+  
+### Pen
+a
+  
+  
+### Music
+a
+  
+  
 
   
   

@@ -57,12 +57,15 @@ https://scratch.mit.edu/discuss/topic/397643/
 * [GUI](#GUI)
 * [Syntax](#Syntax)
 * [Datatypes](#Datatypes)
+* [Screenmodes](#Screenmodes)
 * [Variables](#Variables)
 * [I/O](#Input-and-Output)
 * [Loops](#Loops)
-* [Do if](#Do-if)
+* [Ifnum](#Ifnum)
 * [Functions](#Functions)
 * [Filesystem](#Filesystem)
+* [Pen](#Pen)
+* [Music](#Music)
 * [Other](#Other)
 
 
@@ -138,15 +141,21 @@ These are the 6 main Datatypes:
 
 Let's start with some basic Variables.  
   
-To set a Variable to a value, use set.  
+To set a Variable to a value (and initialise it), use set and sets. 
+(sets is basically set Variable to a String)  
 ```
 set Test 100
+sets Test2 "Test lul"
+set Test $Test2
 ```
-To set a Variable to another Variable, use copy.  
+To do math, use math or 2math.  
 ```
-copy Test Test2
+math $var1 * $var2 var3
+-set the output of var1 * var2 to var3.
+
+2math sin $var1 var2
+-set the ouput of sin of var1 to var2.
 ```
-   
 
 ### Input and Output
 We have a few ways of Input and Output with S-CODE.  
@@ -220,7 +229,7 @@ Note: Loops, if and Do commands only work with variables (for now) so set a vari
   
   
    
-### Do if
+### Ifnum
 The Do if command works like the loop command but only once (no looping)
 ```
 do if var1 (= > < ≠) var 2

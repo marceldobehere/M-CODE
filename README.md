@@ -58,7 +58,6 @@ https://scratch.mit.edu/discuss/topic/397643/
 * [Syntax](#Syntax)
 * [Datatypes](#Datatypes)
 * [Variables](#Variables)
-* [Lists](#Lists)
 * [I/O](#Input-and-Output)
 * [Loops](#Loops)
 * [Do if](#Do-if)
@@ -90,11 +89,27 @@ Wondering how the Menu looks?
 Here is an Image:  
 ![MENU1](https://i.ibb.co/SXK37kg/Download-4.png)  
  Cool, right?
-
-
-
+Left, there is the Keybind Mapper. There you can map special keys to do certain actions like Backspace or Autocompletion.  
+Right, is the main part:  
+We have Options like:  
+* clear code - Clearing your current code.  
+* examples - Shows a list of examples, you can load.  
+* Autocomplete Highlighter - Toggles the highlighting of words that it want to autocorrect.  
+* Save Code - Saving Code  
+* Load Code - Loading Code. 
+That's all ya gotta know :p  
+  
+#### The Import Image Button
+Here you can import your Images with an Image Code you got from ( https://scratch.mit.edu/projects/392443979/ )  
+Note: It will REPLACE your current line of code!  
 
   
+  
+#### The run Button
+With this Button, you can run your Program.  
+When it stops, you can just press the green Flag, to go back to the Editor.  
+
+
   
   
 
@@ -131,63 +146,8 @@ To set a Variable to another Variable, use copy.
 ```
 copy Test Test2
 ```
-To do Math with two Variables, use math.  
-Note: The output will get set to the first Variable.  
-```
-( Supported Operations are Addition(+) Subtraction(-) Multiplication(*) Floor Division(/) )  
-math Test * Test2
-```
-  
-  
    
-### Lists
-Next up are Lists.  
-  
-To set up a List for later use, just use lint.  
 
-```
-lint Test (amount of elements)
-```
-To set an Element to a value, use lset.  
-```
-lset Test 1 5
-```
-This sets the first Element of the List to 5.  
-  
-To set an Element to a Variable, use vlset.  
-```
-vlset Test 1 var
-```
-This sets the first Element of the List to (var).  
-  
-   
-Now we want to set the X'th Element of a List to a Variable.  
-Just use vvlset.  
-```
-vvlset Test var1 var2
-```
-This sets the (var1) Element of the List to (var2).  
-  
-   
-Now we want to set a Variable to some Element of a List!  
-Just use lsetvar.  
-```
-lsetvar Test 1 var
-```
-This sets var to the first Element of the List .  
-  
-  
-And now again with the X'th Element.  
-Can you guess it?  
-Its lsetvvar.  
-```
-lsetvvar Test var1 var2
-```
-This sets var2 to the (var2) Element of the List.  
-  
-
-   
-   
 ### Input and Output
 We have a few ways of Input and Output with S-CODE.  
 #### Input

@@ -131,12 +131,12 @@ We will now look at the things the Arguments can be. (Datatypes)
 Let's look at all of the Datatypes you can use as Arguments!  
 These are the 6 main Datatypes:  
   
-**Values** `They can be a word or a number or a Variable. (variables can be used in places of values like this: $varname )`  
-**Strings** `up to infinite values inside of a "" (like "test 1 2 3 lol")`  
-**Operators** `can be "+, -, *, /, >, <, =, ≠, mode (depending on the Command)`  
+**Values** `They can be a word or a number or a Variable. (variables can be used in places of values like this: $varname ) - are coloured dark blue`    
+**Strings** `up to infinite values inside of a "" (like "test 1 2 3 lol") - are coloured green`  
+**Operators** `can be "+, -, *, /, >, <, =, ≠, mode (depending on the Command) - are coloured purple`  
 (mode would be for the time like second, minute, hour, day, month, year)  
-**Operations** `can be round, amount, round_down, round_up, root, sin, cos, tan, asin, acos, atan, ln, log, e_ttpo, 10_ttpo, (ttpo: to the power of)`  
-**comments** `up to 12 values or so. (mainly for commenting)`  
+**Operations** `can be round, amount, round_down, round_up, root, sin, cos, tan, asin, acos, atan, ln, log, e_ttpo, 10_ttpo, (ttpo: to the power of) - are coloured light green` 
+**comments** `up to 12 values or so. (mainly for commenting) - are coloured grey`  
   
   
 ### Variables
@@ -224,49 +224,38 @@ key a var1
 
 
 #### Output
-For Output we have a few Options:  
-output.
-```
-ouput A
-```
-This will output A.  
-  
-  
-output#.
-```
-ouput# 10
-```
-This will output 10 (a new line)  
-  
-  
-For new lines we can also just use nl.
+For Output we have some Commands: 
+
+* nl
 ```
 nl
 ```
+This will add a new Line to the output.  
   
+* cls
+```
+cls
+```
+This will delete every line.  
   
-Do you want to display Long Text?  
-No Problemo! Just use phrase.
+* +line
 ```
-phrase Hello, World!
++line 1 "test"
 ```
-Can you guess what it will do?  
+This will add test to line 1.  
   
+* +vline
+```
++line 1 12
+```
+This will add 12 to line 1.  
   
-Now let's output a Variable!  
+* delline
 ```
-outvar var
+delline 2
 ```
-This will output the Variable var. (Just like ouput# but with a Variable)  
+This deletes the line 2.  
   
-  
-Many People faced the HORROR of displaying the Value of a variable in Decimal.  
-But with S-CODE it's as simple as outvardec.
-```
-outvardec var
-```
-This will output the decimal value of the Variable var.   
-   
    
    
 ### Loops

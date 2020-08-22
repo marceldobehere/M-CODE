@@ -31,6 +31,8 @@ Here are some Features it has:
 * Randomisation
 * Functions, loops and Ifnum
 
+( Sadly no uppercase support :( )
+
 ## Links
 #### Here is the Project:
 ```
@@ -52,27 +54,54 @@ https://scratch.mit.edu/projects/392443979/
 https://scratch.mit.edu/discuss/topic/397643/
 ```
 #### Lets go over the basics
+* [Syntax](#Syntax)
+* [Datatypes](#Datatypes)
 * [Variables](#Variables)
 * [Lists](#Lists)
 * [I/O](#Input-and-Output)
 * [Loops](#Loops)
 * [Do if](#Do-if)
 * [Functions](#Functions)
-* [Low Level stuff](#Low-Level-Commands)
+* [Filesystem](#Filesystem)
 * [Other](#Other)
 
 
 
 
+### Syntax
+Here is the simple Command-Syntax:  
+```
+Command [arg1] [arg2] [arg3] [arg4] [arg5] [arg6]
+```
+[arg] is an Argument.  
+There can be up to 6 Arguments per Command.  
+We will now look at the things the Arguments can be. (Datatypes)  
+  
+  
+### Datatypes
+Let's look at all of the Datatypes you can use as Arguments!  
+These are the 6 main Datatypes:  
+  
+**values** They can be a word or a number.  
+**strings** up to infinite values inside of a "".like "test 1 2 3 lol"
+**comments** up to 12 values or so. (mainly for commenting)  
+
+strings - sentence or words or word (“Hello World123”) (no variables)
+operators - operators (+, -, *, /, >, <, =, ≠, mode (don't ask!)
+operations - operations 
+(round amount round_down round_up root sin cos tan asin acos atan ln log e_ttpo 10_ttpo) (ttpo - to the power of)
+
+
+
+  
+  
+  
+  
+  
 ### Variables
 
 Let's start with some basic Variables.  
   
-To set up a Variable for later use, just use int.  
-
-```
-int Test
-```
 To set a Variable to a value, use set.  
 ```
 set Test 100
@@ -240,49 +269,13 @@ Note: Functions use global variables like everything else and functions CANNOT h
   
   
   
-### Low Level Commands
+### Filesystem
 Low Level Commands are for manipulating Cells or/and the Pointer directly.  
-We have raw.  
-This allows you to paste your own BF Code inside of the S-CODE.  
-```
-raw >>>+>-[>+<-]
-```
-Note: When using the raw command, you should always use goto beforehand AND the pointer HAS TO BE EXACTLY WHERE IT WAS BEFORE THE RAW CODE!!!!  
-  
-  
-Then we have cellcopy.  
-This allows you to copy one Cell to another.  
-```
-cellcopy 20 35
-```
-This copies the Cell 20 to the Cell 35.  
-    
-  
-Then celllchange.  
-It changes a cell by some amount
-```
-( You can only use + or - )
-celllchange 10 + 2
-```
-This changed the Cell 10 by 2.   
 
 
-
-And last but not least vcellchange.  
-```
-vcellchange 10 + var
-```
-This changed the Cell 10 by (var).  
   
   
-And of Course goto.  
-```
-goto 10
-```
-It sets the Pointer to 10.  
   
-  
-   
 ### Other
 Here are some Commands that don't fit in the other Categories:
 
@@ -302,51 +295,10 @@ Here are some Example Programs I made for you!
 
 ### Hello, World!
  ``` 
-phrase Hello, World!
+cls
+nl
++line 1 "hello, world!"
+wait 5
  ``` 
  
- ### Number Comparator
- ``` 
-int a
-int b
-phrase input number one: 
-input a
-outvar a
-nl
-phrase input number two: 
-input b
-outvar b
 
-loop a = b
-nl
-outvar a
-phrase =
-outvar b
-if a = b loop
-
-loop a > b
-nl
-outvar a
-phrase >
-outvar b
-if a > b loop
-
-loop a < b
-nl
-outvar a
-phrase <
-outvar b
-if a < b loop
- ```  
- ### get decimal ASCII of input
- ``` 
-int a
-phrase Enter a character
-loop a = a
-input a
-nl
-outvar a
-phrase : 
-outvardec a
-if a = a loop
- ``` 

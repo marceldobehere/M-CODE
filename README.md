@@ -271,19 +271,13 @@ This deletes the line 2.
    
    
 ### Loops
-Now let's get to the Loops!  
-  
-   
 Loops look like this:  
 ```
-loop var1 (= > < ≠) var2
+:loop 10
 ...
-if var1 (= > < ≠) var2 loop
+end
 ```
-the *loop* command starts a loop when a condition is given. (Like var1 > var2)  
-Every Loop has to have 1 *if ...* command at the end of it where it will loop if a condition is met (Like var1 ≠ var2)  
-Note: Loops, if and Do commands only work with variables (for now) so set a variable beforehand!  
-
+This code will loop ... 10 times before continuing.
   
   
    
@@ -318,9 +312,11 @@ func "function lol"
 
 ```
 Note: Functions get skipped when "initialising them" and only get executed when called.  
-Note: When calling a function, you can add up to 3 extra values to be inside the function like func "test" 154 20 $var1 and their name is this:
+Note: When calling a function, you can add up to 3 extra values to be inside the function like "func "test" 154 20 $var1" and their name is this:  
 ```
 func_(function name)_[1,2,3]
+like this: +vline 1 $func_test_1
+
 (Note: it won't work on functions with spaces in the name...)
 ```
   

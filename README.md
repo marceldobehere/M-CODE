@@ -158,19 +158,36 @@ math $var1 * $var2 var3
 -sets the ouput of (sin of var1) to var2.
 ```
 Then we also have more commands about Variables:  
-Here we use op_[and, or, not] like this:  
 ```
-op_and $var1 $var2 var3
--sets var3 to true/false depending on if var1 and var2 are equal to one.
+ran 1 10 var1
+-sets var1 to random value (rounded) between 1 and 10.
+
+join hello $test var1
+-joins hello and the variable test into the Variable var1
+
+letter 1 $text var1
+-sets var1 to the first letter of the Variable text
+
+sletter 1 "hello this is a test" var1
+-sets var1 to the first letter of "hello this is a test" (would be h)
+
+lenght hoiiii123 var1
+-sets var1 to the lenght of hoiiii123
+
+contains? $text aa var1
+-sets var1 to true/false, depending on if the variable text has aa inside of it.
+
+scontains? "test aaaaaa lol" aa var1
+-sets var1 to true/false, depending on if "test aaaaaa lol" has aa inside of it.
+
 ```
 
 ### Logic
 We also have logic in form of bitwise Operations.  
+We use the command op_[and, or, not] like this:  
 ```
-
-
-
-
+op_and $var1 $var2 var3
+-sets var3 to true/false depending on if var1 and var2 are equal to one.
 ```
   
   
@@ -199,6 +216,9 @@ m_y var1
 
 m_x var1
 -sets var1 to true/false, depending on if the Left Mouse Button is clicked.
+
+key a var1
+-sets var1 to true/false, depending on if the key a is pressed.
 ```
 
 

@@ -82,11 +82,12 @@ We will now look at the things the Arguments can be. (Datatypes)
 Let's look at all of the Datatypes you can use as Arguments!  
 These are the 6 main Datatypes:  
   
-**values** They can be a word or a number.  
-**strings** up to infinite values inside of a "".like "test 1 2 3 lol"
+**Values** They can be a word or a number or a Variable. (variables can be used in places of values like this: $varname )  
+**Strings** up to infinite values inside of a "" (like "test 1 2 3 lol")  
+**Operators** `can be "+, -, *, /, >, <, =, ≠, mode`
+
 **comments** up to 12 values or so. (mainly for commenting)  
 
-strings - sentence or words or word (“Hello World123”) (no variables)
 operators - operators (+, -, *, /, >, <, =, ≠, mode (don't ask!)
 operations - operations 
 (round amount round_down round_up root sin cos tan asin acos atan ln log e_ttpo 10_ttpo) (ttpo - to the power of)

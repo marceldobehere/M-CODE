@@ -288,31 +288,41 @@ Note: Loops, if and Do commands only work with variables (for now) so set a vari
   
    
 ### Ifnum
-The Do if command works like the loop command but only once (no looping)
+The Ifnum Command skips the next few lines if a condition ISN'T met.  
 ```
-do if var1 (= > < ≠) var 2
-...
-stopdo
-```
-you can guess what how it works by now...  
+set var1 0
+set var2 5
+vask Number: var1
+ifnum $var1 = $var2 2
++line 1 "yay the number is 5!"
+endall
 
-  
++line 1 "awww. the number is not "
++vline 1 $var1
++line 1 "."
+endall
+
+``` 
   
    
 ### Functions
-Functions are like Do if but without the if.  
-Add them with this code:
+Functions are pretty simple.  
+Add them with this code: 
 ```
-function name
+:func "function lol"
 ...
-endfunc
-```
-Call a function with func.  
-```
-func test
-```
-Note: Functions use global variables like everything else and functions CANNOT have other Functions inside!!! (it could cause an endless loop of compiling)  
+end
 
+
+func "function lol"
+
+```
+Note: Functions get skipped when "initialising them" and only get executed when called.  
+Note: When calling a function, you can add up to 3 extra values to be inside the function like func "test" 154 20 $var1 and their name is this:
+```
+func_(function name)_[1,2,3]
+(Note: it won't work on functions with spaces in the name...)
+```
   
   
   

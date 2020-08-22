@@ -54,6 +54,7 @@ https://scratch.mit.edu/projects/392443979/
 https://scratch.mit.edu/discuss/topic/397643/
 ```
 #### Lets go over the basics
+* [GUI](#GUI)
 * [Syntax](#Syntax)
 * [Datatypes](#Datatypes)
 * [Variables](#Variables)
@@ -66,7 +67,18 @@ https://scratch.mit.edu/discuss/topic/397643/
 * [Other](#Other)
 
 
+### GUI
+Let's take a closer look at the GUI of the Project!  
+  
+Here's how it looks when you first start the Project:
+![IMG1](https://ibb.co/dcHJHP8)
 
+
+
+
+  
+  
+  
 
 ### Syntax
 Here is the simple Command-Syntax:  
@@ -82,21 +94,11 @@ We will now look at the things the Arguments can be. (Datatypes)
 Let's look at all of the Datatypes you can use as Arguments!  
 These are the 6 main Datatypes:  
   
-**Values** They can be a word or a number or a Variable. (variables can be used in places of values like this: $varname )  
-**Strings** up to infinite values inside of a "" (like "test 1 2 3 lol")  
-**Operators** `can be "+, -, *, /, >, <, =, ≠, mode`
-
-**comments** up to 12 values or so. (mainly for commenting)  
-
-operators - operators (+, -, *, /, >, <, =, ≠, mode (don't ask!)
-operations - operations 
-(round amount round_down round_up root sin cos tan asin acos atan ln log e_ttpo 10_ttpo) (ttpo - to the power of)
-
-
-
-  
-  
-  
+**Values** `They can be a word or a number or a Variable. (variables can be used in places of values like this: $varname )`  
+**Strings** `up to infinite values inside of a "" (like "test 1 2 3 lol")`  
+**Operators** `can be "+, -, *, /, >, <, =, ≠, mode (depending on the Command)`  
+**Operations** `can be round, amount, round_down, round_up, root, sin, cos, tan, asin, acos, atan, ln, log, e_ttpo, 10_ttpo, (ttpo: to the power of)`  
+**comments** `up to 12 values or so. (mainly for commenting)`  
   
   
 ### Variables

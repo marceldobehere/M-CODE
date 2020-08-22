@@ -64,6 +64,7 @@ https://scratch.mit.edu/discuss/topic/397643/
 * [Loops](#Loops)
 * [Ifnum](#Ifnum)
 * [Functions](#Functions)
+* [Goto and Jump](#Goto-and-Jump)
 * [Filesystem](#Filesystem)
 * [Pen](#Pen)
 * [Music](#Music)
@@ -323,8 +324,68 @@ like this: +vline 1 $func_test_1
   
   
   
+### Goto and Jump
+First, lets look at goto.  
+
+```
+:goto "test goto"
+(sets up a jump point no "end" required and therefore won't get skipped when running)
+...
+
+
+
+goto "test goto"
+(jumps to the point)
+```
+Now, let's look at jump.  
+jump is pretty easy, since it just jumps to a specific line number.  
+Note: The line should be empty so there won't be any errors...  
+```
+jump 10
+```
+
+
+
+
+
 ### Filesystem
-a
+basically you can create, delete and load files with some commands.  
+
+```
+new_file "test" .txt
+-makes a new file called "test" with the extension .txt
+
+sets_file "test.txt" "lol"
+-sets the content of text.txt to "lol"
+
+setv_file "test.txt" $lol
+-sets the content of text.txt to the variable lol
+
+nlto_file "test.txt"
+-adds a new line to a file
+
+addtos_file / addtov_file
+-like (sets/setv)_file but just adding the data
+
+data_line_file "test.txt" 1 var1
+-sets var1 to the first line of the data in test.txt
+
+#datav_line_file "test.txt" lol var1
+-sets var1 to the element number of "lol" in test.txt (lol has to be the whole element!)
+
+#datas_line_file "test.txt" "test lol" var1
+-sets var1 to the element number of "test lol" in test.txt (lol has to be the whole element!)
+
+delline_file "test.txt" 2
+-deletes the second line of file test.txt
+
+del_file "test.txt"
+-deletes the file
+
+run_file "test.txt"
+-runs the file (could lead to lag and acts like a goto)
+
+```
   
   
 ### Pen
@@ -348,6 +409,11 @@ Here are some Commands that don't fit in the other Categories:
  ``` 
 It's for commenting.  
    
+endall.  
+```
+endall
+ ``` 
+Stops the program completely.  
 
 ## Examples
 

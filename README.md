@@ -383,17 +383,60 @@ del_file "test.txt"
 -deletes the file
 
 run_file "test.txt"
--runs the file (could lead to lag and acts like a goto)
+-runs the file (could lead to HUGE lag if done multiple times in each other like run file1 and in file1 run file2 and so on...)
 
 ```
   
   
 ### Pen
-a
+Pen (drawing) commands only work in Screenmode 3.  
+```
+d_thickness 10
+-sets thickness (pixel circle radius)
+
+d_hue 50
+-sets hue
+
+d_sat 50
+-sets saturation
+
+d_bright 60
+-sets brightness
+
+d_trans 0
+-sets transparency
+
+d_col# 10
+-sets pen colour (can be hex if ya add 0x to the start of the value like 0xFFFFFF)
+
+d_cls
+-clears the pen screen
+
+d_penstate (up/down/variable with one of these words)
+-sets pen state
+
+
+d_xy 10 10
+-goes with the pen to a location
+
+
+
+
+
+```
+and for writing Stuff:
+```
+write "test" -220 140 100
+-writes test to x=(-220) y=(140) size=(100%)
+
+vwrite $a 0 0 400
+-writes the Variable a to 0 0 with size of 400%
+```
+
   
   
 ### Music
-a
+
   
   
 
@@ -417,11 +460,8 @@ Stops the program completely.
 
 ## Examples
 
-Here are some Example Programs I made for you!  
-
-
-
-
+Here is the Hello, World! program.  
+(There are a few examples in the project itself...)  
 ### Hello, World!
  ``` 
 cls

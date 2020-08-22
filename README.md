@@ -70,8 +70,26 @@ https://scratch.mit.edu/discuss/topic/397643/
 ### GUI
 Let's take a closer look at the GUI of the Project!  
   
-Here's how it looks when you first start the Project:
-![IMG1](https://i.ibb.co/JdSFSvD/Download-3.png)
+Here's how it looks when you first start the Project:  
+![IMG1](https://i.ibb.co/JdSFSvD/Download-3.png)  
+You will probably notice a few a things: 
+* The numbers on the left.  
+They are here for telling you the number of line you are on.  
+* Differently coloured text.  
+Its for the different Datatypes and for potential errors you made.  
+* The Black Box.  
+That's your cursor!  
+* The 3 Buttons!  
+Those are the main control Buttons!  
+Let's take a closer look!  
+
+#### The Menu Button
+That's the first Button. (from the left)  
+It will allow you to go to the Menu and Back.  
+Wondering how the Menu looks?  
+Here is an Image:  
+![MENU1](https://i.ibb.co/SXK37kg/Download-4.png)  
+ Cool, right?
 
 
 

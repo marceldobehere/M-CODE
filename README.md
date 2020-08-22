@@ -71,7 +71,7 @@ https://scratch.mit.edu/discuss/topic/397643/
 Let's take a closer look at the GUI of the Project!  
   
 Here's how it looks when you first start the Project:
-![IMG1](https://ibb.co/dcHJHP8)
+![IMG1](https://i.ibb.co/JdSFSvD/Download-3.png)
 
 
 
